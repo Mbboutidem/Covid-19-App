@@ -20,6 +20,7 @@ export class Covid19Service {
   }
   getCountyData()
   {
+    return this.http.get(`${this.apiUrl}/countries`)
 
   }
 }

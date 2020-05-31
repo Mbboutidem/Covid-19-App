@@ -11,6 +11,8 @@ export class Tab2Page {
   constructor(
     private covid19services: Covid19Service,
   ) 
-  {}
+  {
+    
+  }
 
 }
