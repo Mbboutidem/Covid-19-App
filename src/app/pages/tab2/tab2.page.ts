@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Covid19Service } from 'src/app/services/covid19-services.service';
 
 @Component({
   selector: 'app-tab2',
@@ -7,6 +8,9 @@ import { Component } from '@angular/core';
 })
 export class Tab2Page {
 
-  constructor() {}
+  constructor(
+    private covid19services: Covid19Service,
+  ) 
+  {}
 
 }
