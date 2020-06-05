@@ -1,12 +1,33 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar  color = "strong-red">
     <ion-title>
       Choose Country
     </ion-title>
   </ion-toolbar>
+  <ion-toolbar>
+    <ion-searchbar [(ngModel)] = "searchItem" autocomplete="off" debounce="500"></ion-searchbar>
+  </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
+    <ion-title>
+      Country and Region
+    </ion-title> 
+
+    <ion-list *ngFor = "let country of countries | filter:searchItem">
+      <ion-item>
+        <ion-label>
+          <h1>{{country.country}}</h1>
+          <p>
+            Cases: {{country.cases | number}} | Today: {{country.todaycases | number}}| Active: {{country.active | number}} <br>
+            Deaths: {{country.deaths | number}} | Today: {{country.todayDeaths | number}} <br>
+            Recovered: {{country.recovered | number}}| Critcal: {{country.critical | number}} <br>
+          </p>
+        </ion-label>
+        <button (click) = "countryInfo(country)">Details</button>
+      </ion-item>
+
+    </ion-list>
   
 
 </ion-content>

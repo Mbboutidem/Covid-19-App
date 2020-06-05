@@ -1,0 +1,73 @@
+<ion-header>
+  <ion-toolbar  color = "strong-red">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref=""></ion-back-button>
+    </ion-buttons>
+    <ion-title>Country Details</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <h1>
+        {{country.country}}
+      </h1>
+      <ion-thumbnail slot = "end">
+        <ion-img *ngIf="country.countryInfo.flag" [src] = "country.countryInfo.flag">
+        </ion-img>
+      </ion-thumbnail>
+    </ion-item>
+  </ion-list>
+  <ion-list >
+    <ion-item>
+      <ion-label>
+        <ion-title>
+          {{country.continent}}
+        </ion-title>
+        <!-- <p>Details:</p> -->
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+  
+  <ion-item>
+    <ion-label>
+        Population: {{country.population | number}} 
+    </ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label>
+        Total No. of Cases: {{country.cases | number}}
+    </ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label>
+        Total No. of Deaths: {{country.deaths | number}}
+    </ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label>
+        Today Active Cases: {{country.todayCases | number}}
+    </ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label>   
+        Today Deaths: {{country.todayDeaths | number}}
+    </ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label>
+        In Critical Condition: {{country.critical | number}}
+    </ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label>
+        Total Recovered: {{country.todayRecovered | number}}
+    </ion-label>
+  </ion-item>
+    <ion-item>
+      <ion-label>Total Test: {{country.tests | number}}</ion-label>
+    </ion-item>
+
+</ion-content>

@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar  color = "strong-red">
     <ion-title>
-      COVID-19 CORONAVIRUS APP
+      COVID-19 APP
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,8 +9,7 @@
 <ion-content [fullscreen]="true">
   <ion-card>
     <ion-card-header>
-      <ion-card-subtitle>Global</ion-card-subtitle>
-      <ion-card-title>Coronavirus cases</ion-card-title>
+      <ion-card-title>Global Coronavirus Cases:</ion-card-title>
     </ion-card-header>
     <ion-card-content >
       <h1>{{update?.cases | number}}</h1>
@@ -18,8 +17,7 @@
   </ion-card>
   <ion-card>
     <ion-card-header>
-      <ion-card-subtitle>Global</ion-card-subtitle>
-      <ion-card-title>Deaths</ion-card-title>
+      <ion-card-title>Global Deaths</ion-card-title>
     </ion-card-header>
     <ion-card-content >
       <h1>{{update?.deaths | number}}</h1>
@@ -27,8 +25,7 @@
   </ion-card>
   <ion-card>
     <ion-card-header>
-      <ion-card-subtitle>Global</ion-card-subtitle>
-      <ion-card-title>Recovered</ion-card-title>
+      <ion-card-title>Total Recovered</ion-card-title>
     </ion-card-header>
     <ion-card-content >
       <h1>{{update?.recovered | number}}</h1>

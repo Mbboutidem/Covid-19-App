@@ -5,6 +5,7 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class Covid19Service {
+  countryData: any;
 
   constructor(
     private http: HttpClient,

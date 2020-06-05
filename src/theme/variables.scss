@@ -226,3 +226,21 @@
     --ion-tab-bar-background: #1f1f1f;
   }
 }
+//customize theme
+:root {
+  --ion-color-strong-red: #ea4b35;
+  --ion-color-strong-red-rgb: 234,75,53;
+  --ion-color-strong-red-contrast: #ffffff;
+  --ion-color-strong-red-contrast-rgb: 255,255,255;
+  --ion-color-strong-red-shade: #ce422f;
+  --ion-color-strong-red-tint: #ec5d49;
+}
+
+.ion-color-strong-red {
+  --ion-color-base: var(--ion-color-strong-red);
+  --ion-color-base-rgb: var(--ion-color-strong-red-rgb);
+  --ion-color-contrast: var(--ion-color-strong-red-contrast);
+  --ion-color-contrast-rgb: var(--ion-color-strong-red-contrast-rgb);
+  --ion-color-shade: var(--ion-color-strong-red-shade);
+  --ion-color-tint: var(--ion-color-strong-red-tint);
+}
