@@ -10,6 +10,8 @@ export class Covid19Service {
   constructor(
     private http: HttpClient,
   ) { }
+  //google api:
+  //AIzaSyBhuVMm_j4kOZYqYw7tEJkltPFvsHKywvk
   //https://corona.lmao.ninja/v2/all
 
   apiUrl = 'https://corona.lmao.ninja/v2';
